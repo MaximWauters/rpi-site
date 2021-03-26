@@ -16,13 +16,14 @@ export class AppComponent {
   update(x: number){
     console.log(x);
     this.points1 = x;
-    gpiop.setup(13, gpiop.DIR_OUT)
+    /*gpiop.setup(13, gpiop.DIR_OUT)
     .then(() => {
         return gpiop.write(13, x)
     })
     .catch((err) => {
         console.log('Error: ', err.toString())
     })
+    */
   }
 
   update2(x: number){
